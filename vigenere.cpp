@@ -21,7 +21,7 @@ int main() {
             char input[128];
             fgets(input, 128, stdin);
             fflush(stdin);
-            decode(input);
+            decode(input, "a");
         }
         else if (!strcmp(mode, "E") || !strcmp(mode, "e"))
         {
@@ -29,7 +29,7 @@ int main() {
             char input[128];
             fgets(input, 128, stdin);
             fflush(stdin);
-            encode(input);
+            encode(input, "test");
         }
         else
         {
