@@ -3,6 +3,8 @@
 #include "coding.cpp"
 
 int main() {
+    //TODO: input zeichen am Ende
+    //TODO: key angeben können
     bool end = false;
     while (!end) {
         printf("Do you want to encode or decode? Choose E or D. If you want to quit please press Q.\n");
