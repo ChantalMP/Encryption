@@ -21,15 +21,15 @@ int main() {
             char input[128];
             fgets(input, 128, stdin);
             fflush(stdin);
-            decode(input, "a");
+            crypt(input, "test", 0);
         }
         else if (!strcmp(mode, "E") || !strcmp(mode, "e"))
         {
-            printf("Please type the text you want to decode: (until 128 characters)\n");
+            printf("Please type the text you want to encode: (until 127 characters)\n");
             char input[128];
             fgets(input, 128, stdin);
             fflush(stdin);
-            encode(input, "test");
+            crypt(input, "test", 1);
         }
         else
         {

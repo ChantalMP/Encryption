@@ -5,6 +5,7 @@
 #ifndef VIGENERECHIFFRE_DATA_H
 #define VIGENERECHIFFRE_DATA_H
 
+int charNumber = 26;
 char vigenereSquare[26][26] =
         {{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'},
             {'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','a'},
