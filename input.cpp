@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
-#include "coding.cpp"
+#include "vingere.cpp"
+#include "caesar.cpp"
 
 int main() {
     //TODO: input zeichen am Ende
@@ -23,7 +24,8 @@ int main() {
             char input[128];
             fgets(input, 128, stdin);
             fflush(stdin);
-            crypt(input, "test", 0);
+            cryptVingere(input, "keyword", 0);
+            cryptCaesar(input, 27, 0);
         }
         else if (!strcmp(mode, "E") || !strcmp(mode, "e"))
         {
@@ -31,7 +33,8 @@ int main() {
             char input[128];
             fgets(input, 128, stdin);
             fflush(stdin);
-            crypt(input, "test", 1);
+            cryptVingere(input, "keyword", 1);
+            cryptCaesar(input, 27, 1);
         }
         else
         {

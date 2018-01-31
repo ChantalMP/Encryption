@@ -3,5 +3,5 @@ project(VingereChiffre)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES vigenere.cpp)
+set(SOURCE_FILES input.cpp)
 add_executable(VingereChiffre ${SOURCE_FILES})

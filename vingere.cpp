@@ -1,14 +1,15 @@
 //
 // Created by Chantal on 24.01.2018.
 //
-#include "data.cpp"
+#include "vingere_data.cpp"
 #include <cstring>
 
-void crypt(char input[], char key[], int mode){
+void cryptVingere(char input[], char key[], int mode){
     int inputlength = strlen(input);
     int keylength = strlen(key);
     char output[inputlength];
 
+    //encode
     if(mode) {
         for (int i = 0; i < inputlength - 1; i++) {
             char clearChar = tolower(input[i]);
@@ -23,6 +24,7 @@ void crypt(char input[], char key[], int mode){
         }
     }
 
+    //decode
     else{
         for (int i = 0; i < inputlength - 1; i++) {
             char cryptChar = tolower(input[i]);
@@ -42,7 +44,7 @@ void crypt(char input[], char key[], int mode){
                 output[i] = input[i];
         }
     }
-    printf("output:%s\n", output);
+    printf("Vingere: %s\n", output);
     fflush(stdin);
     fflush(stdout);
 }
