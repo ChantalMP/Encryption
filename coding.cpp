@@ -1,7 +1,7 @@
 //
 // Created by Chantal on 24.01.2018.
 //
-#include "data.h"
+#include "data.cpp"
 #include <cstring>
 
 void crypt(char input[], char key[], int mode){
